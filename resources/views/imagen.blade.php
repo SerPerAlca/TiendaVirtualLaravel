@@ -241,7 +241,7 @@
 							<h5 class="card-title rosa">{{$producto->Nombre}}</h5>
 							<p class="card-text rosa"> {{$producto->Descripcion}}</p>
 							<p class="card-text precio"> {{$producto->Precio}} €</p>
-							<a href="#" class="btn btn-primary">Al Carrito!</a>
+							<a href="{{ action('CartController@add', [$producto->id]) }}" class="btn btn-primary">Al Carrito!</a>
 						  </div>
 					</div>
 				</div>

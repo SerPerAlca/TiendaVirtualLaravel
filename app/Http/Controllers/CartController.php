@@ -27,7 +27,7 @@ class CartController extends Controller
         $cart = \Session::get('cart.'.$user);
         
         //return \Session::get('cart');
-        return view('cart', compact('cart.'));
+        return view('cart', compact('cart'));
       
     }
     
